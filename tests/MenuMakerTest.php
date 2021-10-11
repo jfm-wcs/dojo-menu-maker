@@ -15,7 +15,7 @@ class MenuMakerTest extends TestCase
             ["name" => "About us", "file" => "/about.php"],
             ["name" => "Contact", "file" => "/contact.php"]
         ];
-        $html = menuMaker($data, "/about.php");
+        $html = makeMenu($data, "/about.php");
         $expected = "<ul><li><a href='/index.php'>Home</a></li>";
         $expected .= "<li><a class='active' href='/about.php'>About us</a></li>";
         $expected .= "<li><a href='/contact.php'>Contact</a></li>";

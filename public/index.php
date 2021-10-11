@@ -19,10 +19,10 @@
         $pages = [
             ["name" => "Home", "file" => "/index.php"], 
             ["name" => "About us", "file" => "/about.php"],
-            ["name" => "Contact", "file" => "/contact.php"]
+            ["name" => "Contact", "file" => "/contact.php"],
         ];
-        if (function_exists('menuMaker')) {
-            echo menuMaker($pages, $_SERVER['PHP_SELF']);
+        if (function_exists('makeMenu')) {
+            echo makeMenu($pages, $_SERVER['PHP_SELF']);
         }
         ?>
     </nav>
